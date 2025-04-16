@@ -39,13 +39,16 @@ const getRandomWord = () => {
 getRandomWord();
 
 const paintCells = () => {
-	const cell = document.createElement('div');
-	cell.classList.add('cell');
+	// const cell = document.createElement('div');
+	// cell.classList.add('cell');
 	// gameboardElement.prepend(cell);
-
 	const totalLetters = wordSelected.length;
 
-	for (let i = 0; i < totalLetters; i++) {}
+	for (let i = 0; i < totalLetters; i++) {
+		const cell = document.createElement('div');
+		cell.classList.add('cell');
+		gameboardElement.prepend(cell);
+	}
 
 	// for (const letter of totalLetters) {
 	// 	const totalCells = letter;
