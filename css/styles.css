@@ -26,7 +26,8 @@ body {
 }
 
 .gameboard {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
   margin: 20px 0;
@@ -41,7 +42,10 @@ body {
   border: 0.0625rem solid white;
   font-size: 1rem;
 }
-
+.cells-container{
+  display: flex;
+  gap: 10px;
+}
 .correct {
   background-color: #6aaa64;
 }
@@ -53,7 +57,7 @@ body {
   background-color: orange;
 }
 
-.solution-button{
+.solution-input{
   background-color: transparent;
   border: none;
   border-bottom: 1px solid white;
