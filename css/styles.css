@@ -21,4 +21,44 @@ nav ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.0625rem solid white;
+  font-size: 1rem;
+}
+
+.correct {
+  background-color: #6aaa64;
+}
+
+.incorrect {
+  background-color: #787c7e;
+}
+.misplaced {
+  background-color: orange;
+}
+
+.solution-button{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  width: 150px;
 }
